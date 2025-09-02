@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallen Kingdom - Guide Complet | Arkane</title>
+    <meta name="description" content="Découvrez le guide complet du Fallen Kingdom, un mode de jeu Minecraft PvP stratégique où les équipes s'affrontent pour capturer les salles des coffres adverses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <svg class="brand-icon" viewBox="0 0 32 32" width="32" height="32">
+                        <rect x="2" y="2" width="8" height="8" fill="#8B4513"/>
+                        <rect x="12" y="2" width="8" height="8" fill="#654321"/>
+                        <rect x="22" y="2" width="8" height="8" fill="#8B4513"/>
+                        <rect x="2" y="12" width="8" height="8" fill="#654321"/>
+                        <rect x="12" y="12" width="8" height="8" fill="#8B4513"/>
+                        <rect x="22" y="12" width="8" height="8" fill="#654321"/>
+                        <rect x="2" y="22" width="8" height="8" fill="#8B4513"/>
+                        <rect x="12" y="22" width="8" height="8" fill="#654321"/>
+                        <rect x="22" y="22" width="8" height="8" fill="#8B4513"/>
+                    </svg>
+                    <span class="brand-text">Fallen Kingdom Arkane</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#concept" class="nav-link">Concept</a></li>
+                    <li><a href="#regles" class="nav-link">Règles</a></li>
+                    <li><a href="#regles-publiques" class="nav-link">Publiques</a></li>
+                    <li><a href="#gameplay" class="nav-link">Gameplay</a></li>
+                    <li><a href="#strategies" class="nav-link">Stratégies</a></li>
+                </ul>
+                
+                <div class="nav-controls">
+                    <button class="theme-toggle" aria-label="Changer de thème">
+                        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="m12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <button class="nav-toggle" aria-label="Ouvrir le menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="minecraft-blocks"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-primary">Fallen</span>
+                    <span class="title-secondary">Kingdom</span>
+                </h1>
+                <p class="hero-subtitle">Le mode de jeu Minecraft PvP ultime</p>
+                <p class="hero-description">
+                    Découvrez un mode de jeu stratégique où plusieurs équipes s'affrontent pour capturer 
+                    les salles des coffres adverses dans un combat épique mêlant construction, stratégie et PvP.
+                </p>
+                <div class="hero-actions">
+                    <a href="#concept" class="btn btn-primary">
+                        <span>Découvrir le jeu</span>
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                    <a href="#regles" class="btn btn-secondary">
+                        <span>Voir les règles</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-block block-1">
+                    <div class="minecraft-block stone"></div>
+                </div>
+                <div class="floating-block block-2">
+                    <div class="minecraft-block dirt"></div>
+                </div>
+                <div class="floating-block block-3">
+                    <div class="minecraft-block diamond"></div>
+                </div>
+                <div class="floating-block block-4">
+                    <div class="minecraft-block tnt"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="concept">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Qu'est-ce que le Fallen Kingdom ?</h2>
+                <p class="section-subtitle">Un mode de jeu unique mêlant stratégie, construction et combat</p>
+            </div>
+            
+            <div class="concept-grid">
+                <div class="concept-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path d="M12 2L2 7V17C2 17.55 2.45 18 3 18H9V12H15V18H21C21.55 18 22 17.55 22 17V7L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Construction de Base</h3>
+                    <p>Chaque équipe construit sa forteresse avec une salle des coffres cachée, accessible uniquement par des chemins naturels.</p>
+                </div>
+                
+                <div class="concept-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path d="M9 7H7V9H9V7ZM9 11H7V13H9V11ZM9 15H7V17H9V15ZM13 7H11V9H13V7ZM13 11H11V13H13V11ZM13 15H11V17H13V15ZM17 7H15V9H17V7ZM17 11H15V13H17V11ZM17 15H15V17H17V15Z"/>
+                        </svg>
+                    </div>
+                    <h3>Stratégie d'Infiltration</h3>
+                    <p>Utilisez la TNT, explorez les grottes ou trouvez des failles pour pénétrer dans les bases ennemies.</p>
+                </div>
+                
+                <div class="concept-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                        </svg>
+                    </div>
+                    <h3>Objectif de Victoire</h3>
+                    <p>Trouvez et occupez la salle des coffres ennemie pendant 1 minute complète pour remporter la victoire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Règles Section -->
+    <section id="regles" class="rules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Règles du Jeu</h2>
+                <p class="section-subtitle">Maîtrisez les règles pour dominer le terrain</p>
+            </div>
+            
+            <div class="rules-container">
+                <div class="rules-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span>J1-2</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Phase de Construction</h3>
+                            <ul>
+                                <li>Construction libre dans votre base</li>
+                                <li>PvP désactivé</li>
+                                <li>Nether et End fermés</li>
+                                <li>Préparation des défenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker active">
+                            <span>J3</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Début des Hostilités</h3>
+                            <ul>
+                                <li>🗡️ <strong>PvP activé</strong></li>
+                                <li>🔥 <strong>Nether ouvert</strong></li>
+                                <li>🏃‍♂️ Première phase d'exploration</li>
+                                <li>⚔️ Premiers affrontements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span>J7</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Phase d'Assaut</h3>
+                            <ul>
+                                <li>💥 <strong>Assauts autorisés</strong></li>
+                                <li>🧨 Utilisation massive de TNT</li>
+                                <li>🏰 Attaques coordonnées sur les bases</li>
+                                <li>🎯 Recherche intensive des salles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rules-cards">
+                    <div class="rule-card">
+                        <div class="rule-header">
+                            <h3>🚫 Interdictions</h3>
+                        </div>
+                        <ul class="rule-list">
+                            <li>Poser des blocs en dehors de sa base (sauf eau, TNT, torches)</li>
+                            <li>Passer par-dessus les murailles avec des enderpearls</li>
+                            <li>Utiliser le Nether pour infiltrer une base</li>
+                            <li>Utiliser l'obsidienne pour les défenses</li>
+                            <li>Casser les spawners</li>
+                            <li>Utiliser des potions niveau 2</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-card">
+                        <div class="rule-header">
+                            <h3>✅ Autorisations</h3>
+                        </div>
+                        <ul class="rule-list">
+                            <li>TNT pour détruire les défenses</li>
+                            <li>Seaux d'eau à l'extérieur des bases</li>
+                            <li>Torches partout</li>
+                            <li>Exploration des grottes naturelles</li>
+                            <li>Toutes les potions niveau 1</li>
+                            <li>Enchantement Flame (Fire Aspect désactivé)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-card">
+                        <div class="rule-header">
+                            <h3>🏆 Conditions de Victoire</h3>
+                        </div>
+                        <ul class="rule-list">
+                            <li>Occuper la salle des coffres ennemie pendant 1 minute</li>
+                            <li>Toute l'équipe doit être présente</li>
+                            <li>La salle doit être accessible sans casser/poser de blocs</li>
+                            <li>Située à maximum 20 blocs de la surface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="gameplay">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Stratégies et Gameplay</h2>
+                <p class="section-subtitle">Conseils pour dominer vos adversaires</p>
+            </div>
+            
+            <div class="gameplay-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="defense">🏰 Défense</button>
+                    <button class="tab-btn" data-tab="attaque">⚔️ Attaque</button>
+                    <button class="tab-btn" data-tab="ressources">⛏️ Ressources</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="defense">
+                        <div class="strategy-grid">
+                            <div class="strategy-card">
+                                <h4>🧱 Construction Défensive</h4>
+                                <p>Créez des murs épais avec des matériaux résistants à la TNT. Utilisez la pierre, les briques ou le fer pour ralentir les assaillants.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>🕳️ Salle des Coffres</h4>
+                                <p>Cachez votre salle dans un endroit inattendu, mais gardez-la accessible. Créez des faux passages pour tromper l'ennemi.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>🏹 Postes de Tir</h4>
+                                <p>Installez des positions surélevées pour vos archers. Contrôlez les approches de votre base avec des tours de guet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="attaque">
+                        <div class="strategy-grid">
+                            <div class="strategy-card">
+                                <h4>🧨 Guerre de Siège</h4>
+                                <p>Préparez des stocks importants de TNT. Planifiez vos explosions pour créer des brèches stratégiques dans les défenses.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>🕳️ Infiltration Souterraine</h4>
+                                <p>Explorez le système de grottes pour trouver des accès secrets. Certaines bases ont des failles naturelles exploitables.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>👥 Coordination d'Équipe</h4>
+                                <p>Attaquez simultanément sur plusieurs fronts. Divisez l'attention ennemie avec des diversions bien orchestrées.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="ressources">
+                        <div class="strategy-grid">
+                            <div class="strategy-card">
+                                <h4>⛏️ Mining Efficace</h4>
+                                <p>Concentrez-vous sur le fer et les diamants. Créez des mines organisées pour maximiser votre rendement en ressources.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>🌾 Agriculture</h4>
+                                <p>Établissez des fermes durables dans votre base. La nourriture est cruciale pour les longs sièges et les combats prolongés.</p>
+                            </div>
+                            <div class="strategy-card">
+                                <h4>🔮 Enchantements</h4>
+                                <p>Priorisez Protection II-III et Sharpness III. Construisez rapidement une salle d'enchantement pour l'avantage tactique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Règles Publiques Section -->
+    <section id="regles-publiques" class="public-rules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Règles Parties Publiques</h2>
+                <p class="section-subtitle">Adaptations spécifiques pour les parties avec viewers</p>
+            </div>
+            
+            <div class="public-rules-content">
+                <div class="rules-comparison">
+                    <div class="comparison-card">
+                        <div class="card-header">
+                            <h3>🎮 Parties Classiques</h3>
+                            <span class="tag tag-classic">Standard</span>
+                        </div>
+                        <ul class="comparison-list">
+                            <li class="allowed">✅ Jumps autorisés pour accès salle</li>
+                            <li class="allowed">✅ Flame et Fire Aspect activés</li>
+                            <li class="allowed">✅ Enchantements standards</li>
+                            <li class="allowed">✅ Rod de pêche utilisable</li>
+                            <li class="allowed">✅ Punch sur les arcs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="vs-divider">
+                        <span>VS</span>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <div class="card-header">
+                            <h3>📺 Parties Publiques</h3>
+                            <span class="tag tag-public">Viewers</span>
+                        </div>
+                        <ul class="comparison-list">
+                            <li class="restricted">❌ Jumps interdits pour accès salle</li>
+                            <li class="restricted">❌ Flame et Fire Aspect désactivés</li>
+                            <li class="info">⚖️ Enchantements limités</li>
+                            <li class="restricted">❌ Rod de pêche désactivée</li>
+                            <li class="restricted">❌ Punch désactivé</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="enchant-limits">
+                    <h3>📜 Limites d'Enchantements - Parties Publiques</h3>
+                    <div class="enchant-grid">
+                        <div class="enchant-item">
+                            <div class="enchant-icon armor">🛡️</div>
+                            <div class="enchant-details">
+                                <h4>Protection</h4>
+                                <p>Diamant: <span class="level">Niveau II</span></p>
+                                <p>Fer: <span class="level">Niveau III</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="enchant-item">
+                            <div class="enchant-icon sword">⚔️</div>
+                            <div class="enchant-details">
+                                <h4>Sharpness</h4>
+                                <p>Épées: <span class="level">Niveau III</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="enchant-item">
+                            <div class="enchant-icon bow">🏹</div>
+                            <div class="enchant-details">
+                                <h4>Power</h4>
+                                <p>Arcs: <span class="level">Niveau III</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="special-rules">
+                    <h3>🏛️ Règles Spéciales</h3>
+                    <div class="special-grid">
+                        <div class="special-card">
+                            <div class="special-icon">🚫</div>
+                            <h4>Accès Salle des Coffres</h4>
+                            <p>Dans les parties publiques, l'accès à la salle des coffres <strong>ne peut pas nécessiter de jump</strong>. L'accès doit être naturel et accessible à tous les joueurs.</p>
+                        </div>
+                        
+                        <div class="special-card">
+                            <div class="special-icon">🎣</div>
+                            <h4>Rod de Pêche</h4>
+                            <p>Les rods de pêche sont <strong>complètement désactivées</strong> pour éviter les techniques de pulling abusives en public.</p>
+                        </div>
+                        
+                        <div class="special-card">
+                            <div class="special-icon">🔥</div>
+                            <h4>Enchantements de Feu</h4>
+                            <p>Flame et Fire Aspect sont <strong>désactivés</strong> pour réduire les avantages techniques et rendre le jeu plus accessible.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gentlemen-rule">
+                    <div class="rule-highlight">
+                        <h3>🤝 Gentleman Rule</h3>
+                        <p>Lors d'un passage dans le Nether, il est <strong>obligatoire de laisser 1 nether wart par équipe restante</strong>. Cette règle de fair-play garantit que toutes les équipes puissent accéder aux potions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section id="strategies" class="advanced-strategies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tactiques Avancées</h2>
+                <p class="section-subtitle">Pour les joueurs expérimentés</p>
+            </div>
+            
+            <div class="strategies-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🎯 Reconnaissance et Intelligence</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 14L12 9L17 14H7Z"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div>
+                            <p>Avant d'attaquer, étudiez la base ennemie. Repérez les patterns de construction, les points faibles, et les possibles emplacements de la salle des coffres. Utilisez les hauteurs pour observer sans être détecté.</p>
+                            <ul>
+                                <li>Cartographiez les défenses ennemies</li>
+                                <li>Identifiez les zones moins protégées</li>
+                                <li>Surveillez les mouvements des joueurs adverses</li>
+                                <li>Cherchez les indices sur l'emplacement de la salle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🌊 Maîtrise de l'Eau</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 14L12 9L17 14H7Z"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div>
+                            <p>L'eau est votre meilleur allié pour l'infiltration. Elle peut éteindre le feu, créer des ascenseurs, et vous protéger des chutes. Maîtrisez son utilisation tactique.</p>
+                            <ul>
+                                <li>Créez des cascades pour l'escalade rapide</li>
+                                <li>Utilisez l'eau pour éteindre les défenses incendiaires</li>
+                                <li>Noyez les passages pour ralentir les poursuivants</li>
+                                <li>Construisez des systèmes d'évacuation aquatiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>💣 Techniques de TNT Avancées</span>
+                        <svg class="accordion-icon" viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M7 14L12 9L17 14H7Z"/>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div>
+                            <p>La TNT ne sert pas qu'à faire des trous. Apprenez les techniques avancées pour maximiser son efficacité et créer des opportunités tactiques.</p>
+                            <ul>
+                                <li>Canon à TNT pour les bombardements à distance</li>
+                                <li>Chaînage d'explosions pour les gros dégâts</li>
+                                <li>TNT flottante pour les attaques aériennes</li>
+                                <li>Temporisation des explosions pour la coordination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits Section -->
+    <section id="credits" class="credits">
+        <div class="container">
+            <div class="credits-content">
+                <h2>Équipe de Création</h2>
+                <div class="credits-grid">
+                    <div class="credit-card">
+                        <div class="credit-avatar">
+                            <svg viewBox="0 0 24 24" width="40" height="40">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Fortcraft</h3>
+                        <p>Organisateur du Fallen Kingdom</p>
+                        <span class="role">Game Master</span>
+                    </div>
+                    
+                    <div class="credit-card">
+                        <div class="credit-avatar">
+                            <svg viewBox="0 0 24 24" width="40" height="40">
+                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM8 6H16V8H8V6ZM16 14H8V12H16V14ZM8 18V16H16V18H8Z"/>
+                            </svg>
+                        </div>
+                        <h3>Crackly</h3>
+                        <p>Créateur du site web</p>
+                        <span class="role">Web Developer</span>
+                    </div>
+                    
+                    <div class="credit-card">
+                        <div class="credit-avatar">
+                            <svg viewBox="0 0 24 24" width="40" height="40">
+                                <path d="M9 11H7V13H9V11ZM13 11H11V13H13V11ZM17 11H15V13H17V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Chakaponk</h3>
+                        <p>Concepteur de l'idée</p>
+                        <span class="role">Game Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="brand-icon" viewBox="0 0 32 32" width="32" height="32">
+                        <rect x="2" y="2" width="8" height="8" fill="#8B4513"/>
+                        <rect x="12" y="2" width="8" height="8" fill="#654321"/>
+                        <rect x="22" y="2" width="8" height="8" fill="#8B4513"/>
+                        <rect x="2" y="12" width="8" height="8" fill="#654321"/>
+                        <rect x="12" y="12" width="8" height="8" fill="#8B4513"/>
+                        <rect x="22" y="12" width="8" height="8" fill="#654321"/>
+                        <rect x="2" y="22" width="8" height="8" fill="#8B4513"/>
+                        <rect x="12" y="22" width="8" height="8" fill="#654321"/>
+                        <rect x="22" y="22" width="8" height="8" fill="#8B4513"/>
+                    </svg>
+                    <span>Fallen Kingdom Arkane</span>
+                </div>
+                <p class="footer-text">
+                    Un site créé pour la communauté de la Arkane. 
+                    Maîtrisez les règles, dominez le terrain ! 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
