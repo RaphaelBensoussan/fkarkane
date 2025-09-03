@@ -1256,6 +1256,47 @@ body {
     margin: 0 auto;
 }
 
+/* Section Objectif Avant Assaut */
+.objectif-assaut {
+    background: #181a1b;
+    padding: 48px 0;
+    color: #fff;
+}
+
+.objectif-assaut .section-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.objectif-assaut .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.objectif-assaut .section-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.objectif-assaut .objectif-content ul {
+    list-style: disc inside;
+    background: #232526;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 1.1rem;
+}
+
+.objectif-assaut .objectif-content li {
+    margin-bottom: 12px;
+}
+
+.objectif-assaut strong {
+    color: #00e676;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
