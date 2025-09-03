@@ -1,6 +1,3 @@
-import { inject } from "@vercel/analytics";
-inject();
-
 // Gestionnaire principal pour l'initialisation
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
